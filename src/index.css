@@ -2,8 +2,8 @@
 
 @theme {
     --color-border: hsl(var(--border));
-    --color-background: hsl(var(--color-background));
-    --color-foreground: hsl(var(--color-foreground));
+    --color-background: hsl(var(--background));
+    --color-foreground: hsl(var(--foreground));
 
     --color-primary: hsl(var(--primary));
     --color-primary-foreground: hsl(var(--primary-foreground));
@@ -124,7 +124,7 @@
 
 @utility text-glow {
     @apply relative;
-    text-xhadow: 0 0 10px rgba(167, 139, 250, 0.5);
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
 }
 
 @utility card-hover {
@@ -133,7 +133,7 @@
 
 @utility gradient-border {
     @apply relative rounded-md;
-    background: linear-gradient(to right, hsl(var(--card)));
+    background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
     background-clip: padding-box;
     border: 1px solid transparent;
 }
